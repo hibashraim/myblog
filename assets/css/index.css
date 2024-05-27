@@ -1,5 +1,8 @@
 @import "./navbar.css";
 @import "./card.css";
+@import "./footer.css";
+@import "./section.css";
+
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
 
@@ -20,64 +23,4 @@ body {
     flex-direction: column;
     align-items: center;
     margin-bottom: 10px;
-}
-
-
-.welcome-section {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 1em;
-}
-
-.welcome-section h1 {
-    margin-right: 2em;
-    background-color: rgb(196, 197, 196);
-    padding: 10px;
-    border-radius: 5px;
-    color: rgb(61, 6, 45);
-}
-
-#welcome-photo {
-    width: 200px;
-    height: auto;
-    border-radius: 30%;
-}
-
-
-.footer {
-    background-color: #f0edea;
-    color: rgb(61, 6, 45);
-    text-align: center;
-    padding: 1em 0;
-    margin-top: 10px;
-    font-weight: bold;
-    font-size: 20px;
-}
-
-@media (max-width: 399px) {
-    .footer {
-        font-size: 10px;
-        font-weight: normal;
-    }
-
-    #welcome-photo {
-        width: 100px;
-        height: auto;
-        border-radius: 100px 100px;
-    }
-
-    h1 {
-        font-size: 20px;
-    }
-
-
-}
-
-@media (max-width: 200px) {
-    .welcome-section h1 {
-        padding-left: 30px;
-        font-size: 15px;
-
-    }
 }
