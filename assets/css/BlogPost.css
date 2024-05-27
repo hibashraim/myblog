@@ -1,0 +1,172 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.blog-post {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 60%;
+    border: 1px solid #ccc;
+    padding: 20px;
+    background-color: #e6e2e4;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#blog-photo {
+    margin: auto;
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 30%;
+}
+
+
+header p {
+    font-style: italic;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+    text-align: center;
+    width: 400px;
+}
+
+section img {
+    max-width: 100%;
+    height: auto;
+    color: #5c384c;
+
+}
+
+h1,
+h2,
+h3,
+p {
+    font-weight: bold;
+    color: #5c384c;
+    font-style: italic;
+
+}
+
+blockquote {
+    margin: 20px 0;
+    padding-left: 20px;
+    border-left: 2px solid #ccc;
+}
+
+footer {
+    text-align: center;
+}
+
+.social-sharing {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.social-sharing a {
+    margin-right: 10px;
+    color: #fff;
+    background-color: #5c384c;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.social-sharing a:hover {
+    background-color: #3a645a;
+}
+
+.home-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #eee9ec;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.home-button a {
+    color: #5c384c;
+    font-weight: bold;
+
+}
+
+.home-button:hover {
+    background-color: #3a645a;
+}
+
+
+@media (max-width: 600px) {
+
+    .blog-post {
+        width: 90%;
+        padding: 15px;
+    }
+
+    #blog-photo {
+        width: 100%;
+        height: auto;
+    }
+
+    section {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    header h1 {
+        font-size: 20px;
+    }
+
+    section h2 {
+        font-size: 18px;
+    }
+
+    section h3 {
+        font-size: 14px;
+    }
+
+    .social-sharing {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .social-sharing a {
+        margin-bottom: 5px;
+    }
+
+}
+
+@media (min-width:700px) {
+    main {
+        height: 100vh;
+    }
+}
+
+@media (max-width: 300px) {
+    #blog-photo {
+        width: 40px;
+        height: 40px;
+        object-fit: fill;
+    }
+}
